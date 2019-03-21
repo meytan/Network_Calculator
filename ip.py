@@ -25,7 +25,7 @@ class Ip:
 
     @staticmethod
     def check_ip(ip):
-        return re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", ip)
+        return re.match(r"^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$", ip)
 
     def __get_octet_mask(self):
         mask = self.mask
