@@ -22,10 +22,10 @@ else:
 
 ip_address.print()
 ip_address.write_to_file("plik.txt")
-
 if ip_address.check_if_host():
     print("Do you want to ping that address?[Y/N]")
-    if input() == "Y":
+    a = input()
+    if a == "Y" or a == "y":
         ping(ip_address.ip_address, verbose=True)
 
 
